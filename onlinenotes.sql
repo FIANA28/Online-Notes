@@ -1,21 +1,9 @@
-
-  
---
--- Dumping data for table `forgotpassword`
---
-
-INSERT INTO `forgotpassword` (`id`, `user_id`, `resetkey`, `time`, `status`) VALUES
-(1, 1, '0fb312573cac0737aa1b6effa8cce3e0', 1605816254, 'pending');
-
--- --------------------------------------------------------
-
---
 -- phpMyAdmin SQL Dump
 -- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 29, 2020 at 09:42 AM
+-- Generation Time: Nov 29, 2020 at 09:41 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.9
 
@@ -39,6 +27,17 @@ CREATE TABLE `forgotpassword` (
   `time` int(11) NOT NULL,
   `status` varchar(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `forgotpassword`
+--
+
+INSERT INTO `forgotpassword` (`id`, `user_id`, `resetkey`, `time`, `status`) VALUES
+(1, 1, '0fb312573cac0737aa1b6effa8cce3e0', 1605816254, 'pending');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `notes`
 --
 
@@ -64,7 +63,8 @@ INSERT INTO `notes` (`id`, `user_id`, `note`, `time`) VALUES
 --
 -- Table structure for table `rememberme`
 --
-  CREATE TABLE `rememberme` (
+
+CREATE TABLE `rememberme` (
   `id` int(11) NOT NULL,
   `authentificator1` char(20) NOT NULL,
   `f2authentificator2` char(64) NOT NULL,
@@ -92,7 +92,7 @@ CREATE TABLE `users` (
   `email` varchar(50) NOT NULL,
   `password` varchar(64) NOT NULL,
   `activation` char(32) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
