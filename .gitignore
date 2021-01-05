@@ -1,2 +1,5 @@
 vendor/
 .env
+
+# database file
+onlinenotes.sql
