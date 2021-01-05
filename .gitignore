@@ -3,3 +3,6 @@ vendor/
 
 # database file
 onlinenotes.sql
+
+# connect to db file
+connnection.php
