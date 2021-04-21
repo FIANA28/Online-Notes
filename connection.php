@@ -1,7 +1,7 @@
 <?php
 //localhost version
 // <!-- Connect to the database  -->
-// $link = mysqli_connect("localhost", "root", "root", "onlinenotes");
+// $link = mysqli_connect("localhost", "user", "PASSWORD", "db");
 // checking if database is connected
 // if(mysqli_connect_error()){
     // die('ERROR: Unable to connect:' . mysqli_connect_error());
@@ -9,7 +9,7 @@
 // }
 //Azure version
 // Connect to the database 
-$link = mysqli_connect("127.0.0.1:50735", "azure", "6#vWHD_$", "onlinenotes");
+$link = mysqli_connect("dbhost", "azure", "PASSWORD", "db");
 // checking if database is connected
 if(mysqli_connect_error()){
     die('ERROR: Unable to connect:' . mysqli_connect_error());
