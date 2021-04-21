@@ -54,9 +54,7 @@ CREATE TABLE `notes` (
 
 INSERT INTO `notes` (`id`, `user_id`, `note`, `time`) VALUES
 (7, 1, 'This is note', 1223456665),
-(9, 10, 'border-left-width: 20px; border-left-width: 20px; border-left-width: 20px; border-left-width: 20px; border-left-width: 20px; ', 1605864388),
-(28, 10, 'it works now!!!!!!!', 1605865213),
-(30, 11, 'test for anna3', 1606475622);
+(9, 10, 'border-left-width: 20px; border-left-width: 20px; border-left-width: 20px; border-left-width: 20px; border-left-width: 20px; ', 1605864388);
 
 -- --------------------------------------------------------
 
@@ -77,8 +75,7 @@ CREATE TABLE `rememberme` (
 --
 
 INSERT INTO `rememberme` (`id`, `authentificator1`, `f2authentificator2`, `user_id`, `expires`) VALUES
-(1, '2ea696b33931034bf2da', '8896fecf7a5e0986d3766cab58753a89c9503385b88792ff4c7fc6614c5fbbee', 9, '2020-12-04 14:35:54'),
-(2, 'c525fc076f1991b9cdf9', '666e8eb88654273a34088ef8e3fac60afcc751f60739e69277d2a0c2e8c4374c', 11, '2020-12-12 11:13:00');
+(1, '2ea696b33931034bf2da', '8896fecf7a5e0986d3766cab58753a89c9503385b88792ff4c7fc6614c5fbbee', 9, '2020-12-04 14:35:54');
 
 -- --------------------------------------------------------
 
@@ -99,9 +96,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `activation`) VALUES
-(9, 'Anna', 'anna@anna.com', 'ANNAanna1', ''),
-(10, 'Anna2', 'anna2@gmail.com', '78bb51160f959df6a64933c36d76ace16ba9971ad5086c95333c19a7bd1e8f9e', ''),
-(11, 'Anna3', 'soinia4@gmail.com', 'aede378014491cfc8df54781f8a04f26cd480a2ae4069e60de831f7841457245', '');
+(9, 'Anna', 'anna@example.com', 'pass', '');
 
 --
 -- Indexes for dumped tables
